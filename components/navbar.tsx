@@ -10,9 +10,8 @@ import { ThemeToggle } from "@/components/theme-toggle";
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/shop", label: "Shop" },
-  { href: "#categories", label: "Categories" },
-  { href: "#about", label: "About" },
-  { href: "#contact", label: "Contact" },
+  { href: "/about", label: "About" },
+  { href: "/blog", label: "Blog" },
 ];
 
 export function Navbar() {
@@ -71,9 +70,11 @@ export function Navbar() {
               <span className="sr-only">Cart</span>
             </Button>*/}
             <ThemeToggle />
-            <Button className="bg-gold text-background hover:bg-gold/90 font-medium ml-2">
-              Get Started
-            </Button>
+            <Link href="/contact">
+              <Button className="bg-gold text-background hover:bg-gold/90 font-medium ml-2">
+                Contact Us
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -112,9 +113,11 @@ export function Navbar() {
                   </span>
                 </Button>*/}
                 <ThemeToggle />
-                <Button className="bg-gold text-background hover:bg-gold/90 font-medium flex-1">
-                  Contact Us
-                </Button>
+                <Link href="/contact">
+                  <Button className="bg-gold text-background hover:bg-gold/90 font-medium flex-1">
+                    Contact Us
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
