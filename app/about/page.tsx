@@ -62,7 +62,6 @@ export default function AboutPage() {
 
   const partners = [
     { name: "Hewlett Packard", logo: "/images/partners/hp-logo.png" },
-    { name: "Cisco", logo: "/images/partners/cisco-logo.png" },
     { name: "Lenovo", logo: "/images/partners/lenovo-logo.png" },
     { name: "Dell", logo: "/images/partners/dell-logo.png" },
     { name: "Epson", logo: "/images/partners/epson-logo.png" },

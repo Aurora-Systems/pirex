@@ -229,7 +229,7 @@ export default function ContactPage() {
                     <div>
                       <h4 className="font-semibold mb-1">Email</h4>
                       <p className="text-sm text-muted-foreground">
-                        sales@pirex.co.zw
+                        sales@pirexcomputers.co.zw
                       </p>
                     </div>
                   </div>

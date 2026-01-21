@@ -15,9 +15,8 @@ const footerLinks = {
   pages: [
     { name: "Home", href: "/" },
     { name: "Shop", href: "/shop" },
-    { name: "About", href: "#about" },
-    { name: "Services", href: "#services" },
-    { name: "Contact", href: "#contact" },
+    { name: "About", href: "/about" },
+    { name: "Contact", href: "/contact" },
   ],
   legal: [
     {
@@ -89,7 +88,7 @@ export function Footer() {
             </h4>
             <div className="mt-4 space-y-3">
               <div className="text-sm text-muted-foreground">
-                <span>sales@pirex.co.zw</span>
+                <span>sales@pirexcomputers.co.zw</span>
               </div>
               <div className="text-sm text-muted-foreground">
                 <span>+263 24 2794 334 / 255491</span>
