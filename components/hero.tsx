@@ -34,7 +34,7 @@ export function Hero() {
           {/* Badge */}
           <div className="glass-gold rounded-full px-4 py-2 mb-8">
             <span className="text-sm font-medium text-gold">
-              <i>est</i> 2004 - Two Decades of Excellence
+              <i>EST.</i> 2004 - Two Decades of Excellence
             </span>
           </div>
 

@@ -1,10 +1,10 @@
-import { Navbar } from "@/components/navbar"
-import { Hero } from "@/components/hero"
-import { Categories } from "@/components/categories"
-import { FeaturedProducts } from "@/components/featured-products"
-import { Features } from "@/components/features"
-import { Newsletter } from "@/components/newsletter"
-import { Footer } from "@/components/footer"
+import { Navbar } from "@/components/navbar";
+import { Hero } from "@/components/hero";
+import { Categories } from "@/components/categories";
+import { FeaturedProducts } from "@/components/featured-products";
+import { Features } from "@/components/features";
+import { Newsletter } from "@/components/newsletter";
+import { Footer } from "@/components/footer";
 
 export default function HomePage() {
   return (
@@ -14,8 +14,8 @@ export default function HomePage() {
       <Categories />
       <FeaturedProducts />
       <Features />
-      <Newsletter />
+      {/*<Newsletter />*/}
       <Footer />
     </main>
-  )
+  );
 }
