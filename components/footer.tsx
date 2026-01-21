@@ -12,26 +12,12 @@ import {
 } from "lucide-react";
 
 const footerLinks = {
-  products: [
-    { name: "Laptops", href: "/shop?category=laptops" },
-    { name: "Desktops", href: "/shop?category=desktops" },
-    { name: "Printers", href: "/shop?category=printers" },
-    { name: "Projectors", href: "/shop?category=projectors" },
-    { name: "Software", href: "/shop?category=software" },
-  ],
-  company: [
-    { name: "About Us", href: "#about" },
-    { name: "Our Partners", href: "#" },
-    { name: "Technical Services", href: "#" },
-    { name: "Careers", href: "#" },
+  pages: [
+    { name: "Home", href: "/" },
+    { name: "Shop", href: "/shop" },
+    { name: "About", href: "#about" },
+    { name: "Services", href: "#services" },
     { name: "Contact", href: "#contact" },
-  ],
-  support: [
-    { name: "Technical Support", href: "#" },
-    { name: "LAN/WAN Setup", href: "#" },
-    { name: "Hardware Repairs", href: "#" },
-    { name: "Warranty Service", href: "#" },
-    { name: "Service Agreements", href: "#" },
   ],
   legal: [
     {
@@ -50,11 +36,21 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { name: "Facebook", icon: Facebook, href: "#" },
-  { name: "Twitter", icon: Twitter, href: "#" },
-  { name: "Instagram", icon: Instagram, href: "#" },
-  { name: "LinkedIn", icon: Linkedin, href: "#" },
-  { name: "YouTube", icon: Youtube, href: "#" },
+  {
+    name: "Facebook",
+    icon: Facebook,
+    href: "https://www.facebook.com/pirexcomputers.co.zw",
+  },
+  {
+    name: "Instagram",
+    icon: Instagram,
+    href: "https://www.instagram.com/pirexcomputers",
+  },
+  {
+    name: "LinkedIn",
+    icon: Linkedin,
+    href: "https://www.linkedin.com/company/pirex-computers-zw",
+  },
 ];
 
 export function Footer() {
@@ -65,9 +61,9 @@ export function Footer() {
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Main Footer */}
-        <div className="py-12 md:py-16 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
-          {/* Brand */}
-          <div className="col-span-2 md:col-span-3 lg:col-span-2">
+        <div className="py-12 md:py-16 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          {/* About Pirex */}
+          <div className="col-span-2 md:col-span-1">
             <Link href="/" className="flex items-center">
               <div className="bg-white rounded-md px-2 py-1">
                 <Image
@@ -84,19 +80,21 @@ export function Footer() {
               Authorized reseller for leading international hardware
               manufacturers.
             </p>
+          </div>
 
-            {/* Contact Info */}
-            <div className="mt-6 space-y-3">
-              <div className="flex items-center gap-3 text-sm text-muted-foreground">
-                <Mail className="w-4 h-4 text-gold" />
+          {/* Contact Details */}
+          <div>
+            <h4 className="text-sm font-semibold text-foreground uppercase tracking-wider">
+              Contact
+            </h4>
+            <div className="mt-4 space-y-3">
+              <div className="text-sm text-muted-foreground">
                 <span>sales@pirex.co.zw</span>
               </div>
-              <div className="flex items-center gap-3 text-sm text-muted-foreground">
-                <Phone className="w-4 h-4 text-gold" />
+              <div className="text-sm text-muted-foreground">
                 <span>+263 24 2794 334 / 255491</span>
               </div>
-              <div className="flex items-center gap-3 text-sm text-muted-foreground">
-                <MapPin className="w-4 h-4 text-gold" />
+              <div className="text-sm text-muted-foreground">
                 <span>
                   Trident Business Centre, Cnr 3rd Street & Central Avenue,
                   Harare
@@ -105,51 +103,13 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Products */}
+          {/* Pages */}
           <div>
             <h4 className="text-sm font-semibold text-foreground uppercase tracking-wider">
-              Products
+              Pages
             </h4>
             <ul className="mt-4 space-y-3">
-              {footerLinks.products.map((link) => (
-                <li key={link.name}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-muted-foreground hover:text-gold transition-colors"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Company */}
-          <div>
-            <h4 className="text-sm font-semibold text-foreground uppercase tracking-wider">
-              Company
-            </h4>
-            <ul className="mt-4 space-y-3">
-              {footerLinks.company.map((link) => (
-                <li key={link.name}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-muted-foreground hover:text-gold transition-colors"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Support */}
-          <div>
-            <h4 className="text-sm font-semibold text-foreground uppercase tracking-wider">
-              Support
-            </h4>
-            <ul className="mt-4 space-y-3">
-              {footerLinks.support.map((link) => (
+              {footerLinks.pages.map((link) => (
                 <li key={link.name}>
                   <Link
                     href={link.href}
